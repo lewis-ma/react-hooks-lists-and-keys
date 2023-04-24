@@ -9,6 +9,10 @@ function ColorList() {
     "hotpink",
   ];
 
+  const colorElements = colors.map((color) => {
+    return <li style={{ color: color }}>{color}</li>;
+  });
+
   return (
     <div>
       <h1>Top 5 CSS Colors</h1>
@@ -22,5 +26,6 @@ function ColorList() {
     </div>
   );
 }
+
 
 export default ColorList;
